@@ -1,0 +1,54 @@
+.column {
+	
+  float: left;
+  width: 7%;
+  padding: 10px;
+  margin-left:15px;
+border-style:solid;
+border-color:#c71a1a;
+}
+
+
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 1; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 0.5;
+  }
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container1 {
+  position: relative;
+ margin-left:70px;
+ margin-top:50px;
+  display: block;
+ 
+}
+.row{
+display:inline-block;
+margin-left:100px;
+margin-bottom:100px;
+margin-top:0px;}
+
+@media screen and (max-width:600px){
+.container1 {
+  position: relative;
+ margin-left:70px;
+ margin-top:0px;
+  display: none;
+}
+
+
+}

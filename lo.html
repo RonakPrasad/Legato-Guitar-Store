@@ -1,0 +1,116 @@
+<html>
+<style>
+.column {
+	
+  float: left;
+  width: 7%;
+  padding: 10px;
+  margin-left:15px;
+border-style:solid;
+border-color:#754b14;
+}
+
+
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 1; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 0.5;
+  }
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container1 {
+  position: relative;
+ margin-left:70px;
+ margin-top:50px;
+  display: block;
+ 
+}
+.row{
+display:inline-block;
+margin-left:100px;
+margin-bottom:100px;
+margin-top:0px;}
+
+@media screen and (max-width:600px){
+.container1 {
+  position: relative;
+ margin-left:70px;
+ margin-top:0px;
+  display: none;
+}
+.product{
+ color:blue;
+margin-left:0px;
+margin-right:0px;
+font-size:7px;
+}
+.lo{
+font-size:100px;
+}
+}
+</style>
+<body>
+<div class="container1">
+
+  <img id="expandedImg" src="download.png" style="width:37%;float:left;">
+</div>
+
+<div class="product" style="font-family:arial;margin-left:60px;margin:right:40px; ">
+<span class="lo" style="font-size:35px;font-family:arial;">&nbsp; Rogue RA-090 Dreadnought Acoustic Guitar</span><br><br>
+<b>Product Description:</b><br>
+From Rogue comes this amazing deal in the RA-90 dreadnought acoustic guitar. The Rogue guitar is an ideal instrument for the beginner, or young musician. The body depth and width bring out balanced tone and plenty of projection to be heard from across the room.This ultra-affordable dreadnought acoustic guitar features a whitewood body, which brings out lots of mid-range punch. The nato neck adds sustain without losing any strength in tone.  The RA-090's C-shape neck, 1-2/3" nut width, and 16" radius help with intricate fretboard movements when running up and down the 20 frets. This Rogue acoustic guitar will certainly get the job done, at a price that anybody can afford.<br><br>
+
+<span class="lo" style="color:green;font-size:25px;">Order Now! Free One-Day Delivery.</span><br>
+
+<form method="post" action="addtocart.php">
+<span style="font-size:30px;"><b>₹6,999/-</b></span><br><br>
+<input type="hidden" name="pno" value="1" />
+<input type="hidden" name="price" value="6999"/>
+	<button id="demo" style="font-size:30px;" type="submit" onclick="gotocart()">Add To Cart</button>
+	<span id="gocart" style="font-size:30px;color:#066d99;"></span>
+	</form>
+<br><br>
+
+<ul style="list-style-type:dot;"><b>Features</b>
+<li>6-string</li>
+<li>Dreadnought design</li>
+<li>Hitewood body</li>
+<li>25-3/8" scale length</li>
+<li>Painted maple bridge</li>
+<li>Painted maple fingerboard</li>
+<li>C-shape neck</li>
+</ul>
+
+</div>
+
+<div class="row">
+<br>
+
+  <div class="column">
+    <img src="download.png"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="download (1).png"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="download (2).png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="download (3).png"  style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+</body>
+</html>
